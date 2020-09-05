@@ -1,0 +1,110 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text",
+      "slider-layout#home",
+      "flex-layout.row#top-banners",
+      "flex-layout.row#middle-banner"
+    ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+
+  //*****Slider***
+  "slider-layout#home":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay":{
+        "timeout":2000,
+        "stopOnHover":true
+      },
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel-home"
+    },
+    "children": ["image#carousel1", "image#carousel2"]
+  },
+  "image#carousel1": {
+    "props":{
+      "src": "assets/images/banner1.png",
+      "maxHeight": 500
+    }
+  },
+  "image#carousel2": {
+    "props":{
+      "src": "assets/images/banner2.png",
+      "maxHeight": 500
+    }
+  },
+
+  //Banner section top
+  "flex-layout.row#top-banners":{
+    "children":["flex-layout.col#home-top-banner1","flex-layout.col#home-top-banner2"]
+  },
+
+  "flex-layout.col#home-top-banner1":{
+    "children":["info-card#home-top-banner1"]
+  },
+  
+  "info-card#home-top-banner1": {
+    "props": {
+      "id": "info-card-home",
+      "blockClass": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/images/mini-banner1.png",
+      // "mobileImageUrl": "",
+      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
+      "subhead": "[NUEVA GENERACIÓN](/hombre/141?map=genero,productClusterIds) [OFERTAS](/mujer/141?map=genero,productClusterIds)",
+      "textMode": "rich-text",
+      "textAlignment": "left",
+      "callToActionMode": "none"
+    }
+  },
+  "flex-layout.col#home-top-banner2":{
+    "children":["info-card#home-top-banner2"]
+  },
+  "info-card#home-top-banner2":{
+    "props": {
+      "id": "info-card-home",
+      "blockClass": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/images/mini-banner2.png",
+      // "mobileImageUrl": "",
+      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
+      "subhead": "[NUEVA GENERACIÓN](/hombre/141?map=genero,productClusterIds) [OFERTAS](/mujer/141?map=genero,productClusterIds)",
+      "textMode": "rich-text",
+      "textAlignment": "left",
+      "callToActionMode": "none"
+    }
+  },
+  "flex-layout.row#middle-banner":{
+    "children":["info-card#home-middle-banner"]
+  },
+  "info-card#home-middle-banner":{
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/images/large-banner.png",
+      "mobileImageUrl": "assets/images/large-banner.png",
+      "textMode": "rich-text",
+      "headline": "# THERMOBALL ECO \n En cualquier clima. Para cualquier actividad. Cuidando al medio ambiente.",
+      "subhead": "[HOMBRE](/hombre/142?map=genero,productClusterIds) [MUJER](/mujer/142?map=genero,productClusterIds)",
+      "callToActionMode": "none",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  }
+}
