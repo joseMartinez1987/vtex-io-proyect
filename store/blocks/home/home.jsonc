@@ -4,7 +4,9 @@
       "rich-text",
       "slider-layout#home",
       "flex-layout.row#top-banners",
-      "flex-layout.row#middle-banner"
+      "flex-layout.row#middle-banner",
+      "flex-layout.row#bottom-banner"
+
     ]
   },
   "rich-text": { 
@@ -27,7 +29,8 @@
       "infinite": true,
       "autoplay":{
         "timeout":2000,
-        "stopOnHover":true
+        "stopOnHover":true,
+        "blockClass":"home-carousel"
       },
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel-home"
@@ -49,11 +52,18 @@
 
   //Banner section top
   "flex-layout.row#top-banners":{
-    "children":["flex-layout.col#home-top-banner1","flex-layout.col#home-top-banner2"]
+    "children":["flex-layout.col#home-top-banner1","flex-layout.col#home-top-banner2"],
+    "props":{
+      "fullWidth":true,
+      "marginBottom":3
+    }
   },
 
   "flex-layout.col#home-top-banner1":{
-    "children":["info-card#home-top-banner1"]
+    "children":["info-card#home-top-banner1"],
+    "props":{
+      "blockClass":"top-banner"
+    }
   },
   
   "info-card#home-top-banner1": {
@@ -77,7 +87,7 @@
   "info-card#home-top-banner2":{
     "props": {
       "id": "info-card-home",
-      "blockClass": "info-card-home",
+      "blockClass": "info-card-home-two",
       "isFullModeStyle": true,
       "textPosition": "left",
       "imageUrl": "assets/images/mini-banner2.png",
@@ -90,7 +100,10 @@
     }
   },
   "flex-layout.row#middle-banner":{
-    "children":["info-card#home-middle-banner"]
+    "children":["info-card#home-middle-banner"],
+    "props":{
+      "fullWidth":true
+    }
   },
   "info-card#home-middle-banner":{
     "props": {
@@ -103,8 +116,77 @@
       "headline": "# THERMOBALL ECO \n En cualquier clima. Para cualquier actividad. Cuidando al medio ambiente.",
       "subhead": "[HOMBRE](/hombre/142?map=genero,productClusterIds) [MUJER](/mujer/142?map=genero,productClusterIds)",
       "callToActionMode": "none",
-      "blockClass": "info-card-home",
+      "blockClass": "info-card-home-middle",
       "textAlignment": "center"
     }
+  },
+  "flex-layout.row#bottom-banner":{
+    "children":[
+      "flex-layout.col#bottom-banner1",
+      "flex-layout.col#bottom-banner2",
+      "flex-layout.col#bottom-banner3"
+    ],
+    "props":{
+      "fullWidth:":true
+    }
+  },
+  "flex-layout.col#bottom-banner1":{
+    "children":["info-card#home-bottom-banner1"]
+  },
+  "info-card#home-bottom-banner1":{
+    "props":{
+      "isFullModeStyle":true,
+      "id": "info-card-home",
+      "blockClass": "bottom-baner-home.bottom-one",
+      "textPosition": "left",
+      "imageUrl": "assets/images/bottom-banner1.png",
+      // "mobileImageUrl": "",
+      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
+      "textMode": "rich-text",
+      "textAlignment": "left",
+      "callToActionText":"VER CATEGORIA",
+      "callToActionUrl":"#"
+    }
+  },
+  "flex-layout.col#bottom-banner2":{
+    "children":["info-card#home-bottom-banner2"]
+  },
+  "info-card#home-bottom-banner2":{
+    "props":{
+      "isFullModeStyle":true,
+      "id": "info-card-home",
+      "blockClass": "bottom-baner-home",
+      "textPosition": "left",
+      "imageUrl": "assets/images/bottom-banner2.png",
+      // "mobileImageUrl": "",
+      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
+      "textMode": "rich-text",
+      "textAlignment": "left",
+      "callToActionText":"VER CATEGORIA",
+      "callToActionUrl":"#"
+    }
+  },
+  "flex-layout.col#bottom-banner3":{
+    "children":["info-card#home-bottom-banner3"]
+  },
+  "info-card#home-bottom-banner3":{
+    "props":{
+      "isFullModeStyle":true,
+      "id": "info-card-home",
+      "blockClass": "bottom-baner-home",
+      "textPosition": "left",
+      "imageUrl": "assets/images/bottom-banner3.png",
+      // "mobileImageUrl": "",
+      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
+      "textMode": "rich-text",
+      "textAlignment": "left",
+      "callToActionText":"VER CATEGORIA",
+      "callToActionUrl":"#"
+    }
   }
+
+
+
+
+
 }

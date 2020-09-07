@@ -1,0 +1,20 @@
+
+/**InforCard*/
+.infoCardContainer--info-card-home {
+    height: 440px;
+    margin: 2rem 1rem 2rem 2rem;
+}
+.infoCardContainer--info-card-home-two {
+    height: 440px;
+    margin: 2rem 2rem 2rem 0;
+}
+
+.infoCardContainer--info-card-home-middle {
+    height:500px;
+}
+.infoCardContainer--info-card-home-middle {
+    margin: 0 2rem
+}
+
+/**ImageElement*/
+
