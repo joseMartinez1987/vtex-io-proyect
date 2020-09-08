@@ -75,7 +75,7 @@
       "imageUrl": "assets/images/mini-banner1.png",
       // "mobileImageUrl": "",
       "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
-      "subhead": "[NUEVA GENERACIÓN](/hombre/141?map=genero,productClusterIds) [OFERTAS](/mujer/141?map=genero,productClusterIds)",
+      "subhead": "[NUEVA GENERACIÓN](/busca) [OFERTAS](/busca)",
       "textMode": "rich-text",
       "textAlignment": "left",
       "callToActionMode": "none"
@@ -92,8 +92,8 @@
       "textPosition": "left",
       "imageUrl": "assets/images/mini-banner2.png",
       // "mobileImageUrl": "",
-      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
-      "subhead": "[NUEVA GENERACIÓN](/hombre/141?map=genero,productClusterIds) [OFERTAS](/mujer/141?map=genero,productClusterIds)",
+      "headline": "# DRONES \n  Mira todo desde un punto de vista diferente",
+      "subhead": "[NUEVA GENERACIÓN](/busca) [OFERTAS](/busca)",
       "textMode": "rich-text",
       "textAlignment": "left",
       "callToActionMode": "none"
@@ -112,12 +112,13 @@
       "textPosition": "left",
       "imageUrl": "assets/images/large-banner.png",
       "mobileImageUrl": "assets/images/large-banner.png",
+      "headline": "# Parlante Bluetooth \n  ### Para que la fiesta no paren en ningun lugar",
+      "subhead": "[VER CATEGORIA](/busca)",
       "textMode": "rich-text",
-      "headline": "# THERMOBALL ECO \n En cualquier clima. Para cualquier actividad. Cuidando al medio ambiente.",
-      "subhead": "[HOMBRE](/hombre/142?map=genero,productClusterIds) [MUJER](/mujer/142?map=genero,productClusterIds)",
+      "textAlignment": "center",
       "callToActionMode": "none",
-      "blockClass": "info-card-home-middle",
-      "textAlignment": "center"
+      "blockClass": "info-card-home-middle"
+
     }
   },
   "flex-layout.row#bottom-banner":{
@@ -127,7 +128,9 @@
       "flex-layout.col#bottom-banner3"
     ],
     "props":{
-      "fullWidth:":true
+      "fullWidth":true
+      // "preventHorizontalStretch":true
+
     }
   },
   "flex-layout.col#bottom-banner1":{
@@ -137,15 +140,15 @@
     "props":{
       "isFullModeStyle":true,
       "id": "info-card-home",
-      "blockClass": "bottom-baner-home.bottom-one",
+      "blockClass": "bottom-banner-home-one",
       "textPosition": "left",
       "imageUrl": "assets/images/bottom-banner1.png",
       // "mobileImageUrl": "",
-      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
+      "headline": "# AUDIFONOS BLUETOOTH",
+      "subhead": "[VER CATEGORIA](/busca)",
       "textMode": "rich-text",
-      "textAlignment": "left",
-      "callToActionText":"VER CATEGORIA",
-      "callToActionUrl":"#"
+      "textAlignment": "center",
+      "callToActionMode": "none"
     }
   },
   "flex-layout.col#bottom-banner2":{
@@ -155,15 +158,15 @@
     "props":{
       "isFullModeStyle":true,
       "id": "info-card-home",
-      "blockClass": "bottom-baner-home",
+      "blockClass": "bottom-banner-home-two",
       "textPosition": "left",
       "imageUrl": "assets/images/bottom-banner2.png",
       // "mobileImageUrl": "",
-      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
+      "headline": "# MICROFONOS",
+      "subhead": "[VER CATEGORIA](/busca)",
       "textMode": "rich-text",
-      "textAlignment": "left",
-      "callToActionText":"VER CATEGORIA",
-      "callToActionUrl":"#"
+      "textAlignment": "center",
+      "callToActionMode": "none"
     }
   },
   "flex-layout.col#bottom-banner3":{
@@ -173,15 +176,17 @@
     "props":{
       "isFullModeStyle":true,
       "id": "info-card-home",
-      "blockClass": "bottom-baner-home",
+      "blockClass": "bottom-banner-home-three",
       "textPosition": "left",
       "imageUrl": "assets/images/bottom-banner3.png",
       // "mobileImageUrl": "",
-      "headline": "# GOOGLE HOME  \n  Descubre lo sorprendente de estar siempre conectado.",
+      "headline": "# VIDEOGRABADORA",
+      "subhead": "[VER CATEGORIA](/busca)",
       "textMode": "rich-text",
-      "textAlignment": "left",
-      "callToActionText":"VER CATEGORIA",
-      "callToActionUrl":"#"
+      "textAlignment": "center",
+      "callToActionMode": "none"
+
+      // "callToActionText":"VER CATEGORIA",
     }
   }
 

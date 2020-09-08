@@ -4,6 +4,62 @@
     height: 440px;
     margin: 2rem 1rem 2rem 2rem;
 }
+
+.heading--info-card-home,
+.paragraph--info-card-home,
+.heading--info-card-home-two,
+.paragraph--info-card-home-two,
+.heading--info-card-home-middle,
+.heading--bottom-banner-home-one,
+.paragraph--bottom-banner-home-one,
+.heading--bottom-banner-home-two,
+.paragraph--bottom-banner-home-two,
+.heading--bottom-banner-home-three,
+.paragraph--bottom-banner-home-three
+
+ {
+    color: #fff;
+}
+.heading--bottom-banner-home-one,
+.heading--bottom-banner-home-two,
+.heading--bottom-banner-home-three,
+.infoCardTextContainer--bottom-banner-home-one,
+.infoCardTextContainer--bottom-banner-home-two,
+.infoCardTextContainer--bottom-banner-home-three,
+.container--bottom-banner-home-one,
+.container--bottom-banner-home-two,
+.container--bottom-banner-home-three,
+.wrapper--bottom-banner-home-one,
+.wrapper--bottom-banner-home-two,
+.wrapper--bottom-banner-home-three
+ {
+    width: 100%;
+    text-align: center;
+}
+
+.link--info-card-home,
+.link--info-card-home-two,
+.link--bottom-banner-home-one,
+.link--bottom-banner-home-two,
+.link--bottom-banner-home-three,
+.link--info-card-home-middle
+ {
+    background-color: #0000004b;
+    color: #fff;
+    padding:1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+.infoCardTextContainer--info-card-home,
+.infoCardTextContainer--info-card-home-two {
+    width: 100%;
+}
+.wrapper--info-card-home,
+.wrapper--info-card-home-two {
+    width: 100%;
+}
+
+
 .infoCardContainer--info-card-home-two {
     height: 440px;
     margin: 2rem 2rem 2rem 0;
@@ -11,10 +67,32 @@
 
 .infoCardContainer--info-card-home-middle {
     height:500px;
-}
-.infoCardContainer--info-card-home-middle {
     margin: 0 2rem
 }
+
+.infoCardContainer--bottom-banner-home-one {
+    height: 740px;
+    margin: 2rem 1rem 2rem 2rem 
+
+}
+.infoCardContainer--bottom-banner-home-two,
+.infoCardContainer--bottom-banner-home-three  {
+    height: 740px;
+    margin: 2rem 1rem 2rem 0 
+}
+
+.infoCardCallActionContainer--bottom-banner-home-one,
+.infoCardCallActionContainer--bottom-banner-home-two,
+.infoCardCallActionContainer--bottom-banner-home-three {
+    width:100%;
+    background-color: #0000004b;
+    color: #fff;
+    padding:1rem;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
 
 /**ImageElement*/
 
