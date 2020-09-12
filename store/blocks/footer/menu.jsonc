@@ -1,0 +1,127 @@
+{
+
+    //NOSOTROS * * * * * * *
+    "vtex.menu@2.x:menu#quienes-somos":{
+        "props":{
+            "orientation":"vertical"
+        },
+        "children": [
+            "menu-item#nosotros-title",
+            "menu-item#mision-link",
+            "menu-item#vision-link"
+        ]
+    },
+    "menu-item#nosotros-title":{
+        "props": {
+            "id": "nosotros-title",
+            "type": "custom",
+            "iconId": null,
+            "blockClass": "title-menu-footer",
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "nosotros",
+              "text": "Nosotros"
+            }
+          }
+    },
+    "menu-item#mision-link": {
+        "props": {
+            "id": "mision-title",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "mision",
+              "text": "Misión"
+            }
+          }
+    },
+    "menu-item#vision-link": {
+        "props": {
+            "id": "vision-title",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "vision",
+              "text": "Visión"
+            }
+          }
+    },
+    //AYUDA * * * * * * *
+
+    "vtex.menu@2.x:menu#ayuda": {
+        "props":{
+            "orientation":"vertical"
+        },
+        "children": [
+            "menu-item#ayuda-title",
+            "menu-item#cambios-devoluciones-link",
+            "menu-item#guia-talla-link",
+            "menu-item#politica-despacho-link"
+        ]
+    },
+    "menu-item#ayuda-title":{
+        "props": {
+            "id": "ayuda-title",
+            "type": "custom",
+            "iconId": null,
+            "blockClass": "title-menu-footer",
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "ayuda",
+              "text": "Ayuda"
+            }
+          }
+    },
+    "menu-item#cambios-devoluciones-link": {
+        "props": {
+            "id": "cambio-title",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "cambio",
+              "text": "Cambio y Devoluciones"
+            }
+          }
+    },
+    "menu-item#guia-talla-link":{
+        "props": {
+            "id": "ayuda-title",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "guia-talla",
+              "text": "Guia de Talla"
+            }
+          }
+    },
+    "menu-item#politica-despacho-link":{
+        "props": {
+            "id": "politica-despacho-title",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "politica-despacho",
+              "text": "Politica de Despacho"
+            }
+          }
+    }
+}

@@ -1,0 +1,79 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+
+
+  //FOOTER DESKTOP********************
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer-1-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children":[
+      "vtex.menu@2.x:menu#quienes-somos",
+      "vtex.menu@2.x:menu#ayuda",
+      "flex-layout.col#footer-3-metodos-pagos",
+      "flex-layout.col#footer-4-newsletter"
+
+
+    ]
+  },
+  "flex-layout.col#footer-3-metodos-pagos": {
+    "children": ["image#transbank","image#mercadopago"],
+    "props":{
+      "horizontalAlign":"center"
+    }
+  },
+  "image#transbank": {
+    "props": {
+      "src": "assets/images/webpay-plus.png",
+      "maxHeight": 150
+    }
+  },
+  "image#mercadopago": {
+    "props": {
+      "src": "assets/images/mercadoPago.png",
+      "maxHeight": 80
+    }
+  },
+  "flex-layout.col#footer-4-newsletter": {
+    "children":["newsletter"]
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // FOOTER MOBILE
+  // "footer-layout.mobile": { 
+  //   "children": [
+  //     // "flex-layout.row#footer"
+  //   ]
+  // }
+  // "flex-layout.row#footer": { 
+  //   "children": [
+  //     "image"
+  //   ]
+  // },
+  // "image": {
+  //   "props": {
+  //     "width": 100,
+  //     "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+  //   }
+  // }
+}
