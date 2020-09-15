@@ -1,0 +1,55 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#topbar",
+      "header-row#1-desktop"
+      // "header-row#3-desktop"
+    ]
+  },
+  "flex-layout.row#topbar":{
+    "props": {
+      "fullWidth":true,
+      "blockClass":"topbar-container"
+    },
+    "children" : [
+      "rich-text#topbar"
+    ]
+  },
+  "rich-text#topbar": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Entra aqui en encuentra nuestras mejores ofertas en tecnología](/)",
+      "blockClass": "topbar-text"
+    }
+  },
+  "header-row#1-desktop": {
+    "children": [
+      "image#logo",
+      "vtex.menu@2.x:menu#navbar",
+      "search-bar",
+      "login",
+      "minicart.v2"
+
+    ]
+  },
+  "image#logo": {
+    "props": {
+      "src": "assets/images/future-technologi-logo.png",
+      "maxHeight": 80,
+      "link":"/",
+      "blockClass":"logo-image"
+    }
+  }
+
+}

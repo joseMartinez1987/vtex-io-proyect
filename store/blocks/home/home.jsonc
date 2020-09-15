@@ -1,7 +1,7 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text",
+
       "slider-layout#home",
       "flex-layout.row#top-banners",
       "flex-layout.row#middle-banner",
@@ -9,15 +9,6 @@
       "flex-layout.row#carousel"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
-  },
-
   //*****Slider***
   "slider-layout#home":{
     "props": {

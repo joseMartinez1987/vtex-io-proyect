@@ -1,0 +1,162 @@
+{
+    "vtex.menu@2.x:menu#navbar":{
+        "children":[
+      "menu-item#parlante-inteligente",
+      "menu-item#video-camara",
+      "menu-item#laptos"
+        ]
+    },
+    //**********Navbar Menu
+    "menu-item#parlante-inteligente": {
+        "props": {
+          "id": "menu-parlante",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "parlante",
+            "text": "Parlante inteligente"
+          },
+          "blockClass": "main-menu-block"
+        },
+        "blocks": ["vtex.menu@2.x:submenu#parlante"]
+      },
+      "menu-item#video-camara":{
+        "props": {
+            "id": "menu-video",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "video",
+              "text": "Videograbadoras"
+            },
+            "blockClass": "main-menu-block"
+          }
+        },
+        "menu-item#laptos":{
+            "props": {
+                "id": "menu-laptos",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": true,
+                  "tagTitle": "laptos",
+                  "text": "Laptos"
+                },
+                "blockClass": "main-menu-block"
+              }
+        },
+    
+      //Navbar Submenu
+
+      "vtex.menu@2.x:submenu#parlante":{
+          "children":["flex-layout.row#submenu-flex-parlante"]
+      },
+
+      "flex-layout.row#submenu-flex-parlante":{
+          "children":[
+              "flex-layout.col#parlante-menu",
+              "flex-layout.col#parlante-image"
+          ]
+      },
+      "flex-layout.col#parlante-menu":{
+          "children":[
+              "vtex.menu@2.x:menu#inner-parlante"
+          ]
+      },
+      "vtex.menu@2.x:menu#inner-parlante":{
+          "props":{
+              "orientation":"vertical"
+          },
+          "children":[
+                  "menu-item#LG",
+                  "menu-item#Marshall",
+                  "menu-item#Amazon",
+                  "menu-item#Google"
+                ]
+      },
+      "menu-item#LG":{
+        "props": {
+            "id": "menu-parlante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "parlante LG",
+              "text": "Parlante LG"
+            },
+            "blockClass": "inner-menu-block"
+          }
+      },
+      "menu-item#Marshall":{
+        "props": {
+            "id": "menu-parlante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "parlante Marshall",
+              "text": "Parlante Marshall"
+            },
+            "blockClass": "inner-menu-block"
+          }
+      },
+      "menu-item#Amazon":{
+        "props": {
+            "id": "menu-parlante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "parlante Amazon",
+              "text": "Parlante Amazon"
+            },
+            "blockClass": "inner-menu-block"
+          }
+      },
+      "menu-item#Google":{
+        "props": {
+            "id": "menu-parlante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "parlante Google",
+              "text": "Parlante Google"
+            },
+            "blockClass": "inner-menu-block"
+          }
+      },
+      "flex-layout.col#parlante-image": {
+          "children":["image#inner-parlante"]
+      },
+      "image#inner-parlante":{
+          "props":{
+            "src": "assets/images/parlante-inner-banner.png",
+            "maxHeight": 300
+      
+          }
+      }
+}
