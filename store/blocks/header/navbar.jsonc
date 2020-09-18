@@ -60,10 +60,16 @@
       //Navbar Submenu
 
       "vtex.menu@2.x:submenu#parlante":{
+        "props":{
+          "blockClass":"inner-menu-block"
+        },
           "children":["flex-layout.row#submenu-flex-parlante"]
       },
 
       "flex-layout.row#submenu-flex-parlante":{
+        "props":{
+          "blockClass":"flex-inner-menu"
+        },
           "children":[
               "flex-layout.col#parlante-menu",
               "flex-layout.col#parlante-image"

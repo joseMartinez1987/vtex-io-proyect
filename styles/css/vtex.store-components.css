@@ -96,3 +96,6 @@
 
 /**ImageElement*/
 
+.imageElement--logo-image {
+    border-radius:1rem;
+}
