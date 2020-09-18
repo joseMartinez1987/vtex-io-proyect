@@ -186,7 +186,8 @@
   "blocks": ["product-summary.shelf"],
   "children": ["slider-layout#carousel-products"],
   "props": {
-    "orderBy": "OrderByTopSaleDESC"
+    "orderBy": "OrderByTopSaleDESC",
+    "category":"3"
   }
 },
 "slider-layout#carousel-products":{
