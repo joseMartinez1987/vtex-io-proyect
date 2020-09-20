@@ -5,4 +5,12 @@
 /* navbar Submenu  */
 .flexRow--flex-inner-menu {
     width: 100%;
+    /* align-self: center;
+    position: absolute;
+    left: 0;
+    right: 0; */
+}
+
+.flexColChild--navbar-hover-leff {
+    align-self: center;
 }

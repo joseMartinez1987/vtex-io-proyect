@@ -68,7 +68,10 @@
 
       "flex-layout.row#submenu-flex-parlante":{
         "props":{
-          "blockClass":"flex-inner-menu"
+          "blockClass":"flex-inner-menu",
+          "horizontalAlign": "center",
+          "verticalAlign":"middle"
+          // "fullWidth": true
         },
           "children":[
               "flex-layout.col#parlante-menu",
@@ -82,7 +85,8 @@
       },
       "vtex.menu@2.x:menu#inner-parlante":{
           "props":{
-              "orientation":"vertical"
+              "orientation":"vertical",
+              "blockClass":"navbar-hover-left"
           },
           "children":[
                   "menu-item#LG",

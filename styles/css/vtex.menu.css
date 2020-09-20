@@ -1,4 +1,17 @@
 .submenuWrapper--inner-menu-block {
     width: 1920px;
-    left: -100%;
+    left: -120%;
+    top: 2%;
+}
+
+.menuContainerNav--navbar-hover-left {
+    margin-top: 6rem;
+}
+.styledLinkContent--inner-menu-block {
+    line-height: 25px;
+}
+.submenu--inner-menu-block {
+    position: absolute;
+    background-color: #fff;
+    left: -3%;
 }
