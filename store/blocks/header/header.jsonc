@@ -55,6 +55,47 @@
       "link":"/",
       "blockClass":"logo-image"
     }
+  },
+
+  //HEADER MOBILE
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile"
+      // "flex-layout.row#1-mobile"
+      // "drawer",
+      // "logo#mobile",
+      // "minicart.v2"
+    ]
+  },
+  "header-row#1-mobile": {
+    "props":{
+      "sticky":true,
+      "blockClass":"header-mobile"
+    },
+    "children": [
+      "drawer",
+      "header-spacer",
+      "logo#mobile",
+      "header-spacer",
+      "minicart.v2"
+    ]
+  },
+  "drawer": {
+    "children": ["vtex.menu@2.x:menu#mobile-main-menu"]
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/future-technologi-logo.png",
+      "mobileWidth": 70,
+      "mobileHeight": 70,
+      "blockClass": "logo-mobile"
+    }
   }
+
+  
 
 }

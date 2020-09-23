@@ -1,0 +1,114 @@
+{
+    "menu-item#mobile-parlante":{
+        "props": {
+            "id": "menu-parlante-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "parlante",
+            "text": "Parlante inteligente"
+            },
+            "blockClass": "main-menu-block-mobile"
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#parlante"]
+    },
+    "menu-item#mobile-videograbadoras":{
+        "props": {
+            "id": "menu-videograbadora-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "parlante",
+            "text": "Videograbadoras"
+            },
+            "blockClass": "main-menu-block-mobile"
+        }
+    },
+    "menu-item#mobile-laptos": {
+        "props": {
+            "id": "menu-lapto-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "parlante",
+            "text": "Lapto"
+            },
+            "blockClass": "main-menu-block-mobile"
+        }
+    },
+    "vtex.menu@2.x:submenu.accordion#parlante": {
+        "children": ["vtex.menu@2.x:menu#accordion-hombre"]
+    },
+    "vtex.menu@2.x:menu#accordion-hombre":{
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "mobile-submenu-items",
+            "items": [
+              {
+                "id": "mobile-menu-Parlante-LG",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "/vino",
+                  "noFollow": true,
+                  "tagTitle": "Parlante LG",
+                  "text": "Parlante LG"
+                }
+              },
+              {
+                "id": "mobile-menu-item-Parlante-Marshall",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "/vino",
+                  "noFollow": true,
+                  "tagTitle": "Parlante Marshall",
+                  "text": "Parlante Marshall"
+                }
+              },
+              {
+                "id": "menu-item-Parlante-Amazon",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "/vino",
+                  "noFollow": true,
+                  "tagTitle": "Parlante Amazon",
+                  "text": "Parlante Amazon"
+                }
+              },
+              {
+                "id": "menu-item-Parlante-Google",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "/vino",
+                  "noFollow": true,
+                  "tagTitle": "Parlante Google",
+                  "text": "Parlante Google"
+                }
+              }
+            ]
+          }
+    }
+}

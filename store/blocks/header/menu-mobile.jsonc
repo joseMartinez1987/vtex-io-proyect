@@ -1,0 +1,13 @@
+{
+    "vtex.menu@2.x:menu#mobile-main-menu": {
+        "children": [
+            "menu-item#mobile-parlante",
+            "menu-item#mobile-videograbadoras",
+            "menu-item#mobile-laptos"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "mobile-menu"
+          }
+    }
+}
