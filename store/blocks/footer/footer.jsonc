@@ -12,6 +12,9 @@
     ]
   },
   "flex-layout.row#footer-1-desktop": {
+    "props": {
+      "blockClass": "footer-container-desktop"
+    },
     "children":[
       "vtex.menu@2.x:menu#quienes-somos",
       "vtex.menu@2.x:menu#ayuda",

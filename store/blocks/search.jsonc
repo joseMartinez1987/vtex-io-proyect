@@ -121,7 +121,9 @@
   "flex-layout.col#filter": {
     "children": ["filter-navigator.v3"],
     "props": {
-      "blockClass": "filterCol"
+      "blockClass": "filterCol",
+      "preventVerticalStretch": true
+
     }
   },
   "flex-layout.col#content": {
@@ -133,7 +135,9 @@
     ],
     "props": {
       "width": "grow",
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass": "product-shelf-desktop"
+
     }
   },
   "flex-layout.row#searchinfo": {

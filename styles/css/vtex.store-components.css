@@ -95,6 +95,9 @@
 
 
 /**ImageElement*/
+.imageElementLink--logo-image {
+    z-index: 9;
+}
 
 .imageElement--logo-image {
     border-radius:1rem;

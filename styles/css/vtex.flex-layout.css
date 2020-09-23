@@ -5,12 +5,21 @@
 /* navbar Submenu  */
 .flexRow--flex-inner-menu {
     width: 100%;
-    /* align-self: center;
-    position: absolute;
-    left: 0;
-    right: 0; */
 }
 
 .flexColChild--navbar-hover-leff {
     align-self: center;
+}
+
+/*SEARCH-RESULT */
+.flexCol--filterCol {
+    width: 20rem;
+}
+
+/*FOOTER*/
+.flexRow--footer-container-desktop {
+    padding-top: 2rem;
+    border-top: 1px solid grey;
+    margin-top: 2rem;
+    background-color: #c8e4e9;
 }

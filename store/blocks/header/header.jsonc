@@ -9,6 +9,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
 
+  //HEADER DESKTOP
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#topbar",
@@ -35,7 +36,8 @@
   },
   "header-row#1-desktop": {
     "props":{
-      "sticky":true
+      "sticky":true,
+      "blockClass":"header-desktop"
     },
     "children": [
       "image#logo",
