@@ -44,18 +44,7 @@
   },
   "flex-layout.col#footer-4-newsletter": {
     "children":["newsletter"]
-  }
-
-
-
-
-
-
-
-
-
-
-
+  },
 
 
 
@@ -63,20 +52,166 @@
 
 
  // FOOTER MOBILE
-  // "footer-layout.mobile": { 
-  //   "children": [
-  //     // "flex-layout.row#footer"
-  //   ]
-  // }
-  // "flex-layout.row#footer": { 
-  //   "children": [
-  //     "image"
-  //   ]
-  // },
-  // "image": {
-  //   "props": {
-  //     "width": 100,
-  //     "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
-  //   }
-  // }
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer-mobile"
+    ]
+  },
+  "flex-layout.row#footer-mobile": { 
+    "children": ["vtex.menu@2.x:menu#mobile-footer"]
+  },
+  "vtex.menu@2.x:menu#mobile-footer": {
+    "props": {
+      "orientation":"vertical"
+    },
+    "children": [
+      "menu-item#mobile-footer-Nosotros",
+      "menu-item#mobile-footer-Ayuda"
+    ]
+  },
+  "menu-item#mobile-footer-Nosotros": {
+    "props": {
+      "id": "menu-footer-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "parlanNosotroste",
+      "text": "Nosotros"
+      },
+      "blockClass": "menu-footer"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#nosotros"]
+  },
+  "vtex.menu@2.x:submenu.accordion#nosotros": {
+    "children":["vtex.menu@2.x:menu#accordion-nostros"]
+  },
+  "vtex.menu@2.x:menu#accordion-nostros":{
+    "props":{
+      "orientation": "vertical"
+    },
+    "children":[
+      "menu-item#mobile-inner-Misión",
+      "menu-item#mobile-inner-Visión"
+    ]
+  },
+  "menu-item#mobile-inner-Misión":{
+    "props": {
+      "id": "menu-footer-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Misión",
+      "text": "Misión"
+      },
+      "blockClass": "menu-footer"
+    }
+  },
+  "menu-item#mobile-inner-Visión":{
+    "props": {
+      "id": "menu-footer-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Visión",
+      "text": "Visión"
+      },
+      "blockClass": "menu-footer"
+    }
+  },
+  "menu-item#mobile-footer-Ayuda":{
+    "props": {
+      "id": "menu-footer-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "parlanNosotroste",
+      "text": "Ayuda"
+      },
+      "blockClass": "menu-footer"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#ayuda"]
+  },
+  "vtex.menu@2.x:submenu.accordion#ayuda": {
+
+    "children":["vtex.menu@2.x:menu#accordion-ayuda"]
+  },
+  "vtex.menu@2.x:menu#accordion-ayuda": {
+    "props": {
+      "orientation":"vertical"
+    },
+    "children": [
+      "menu-item#mobile-inner-Cambio-Devoluciones",
+      "menu-item#mobile-inner-Guia-Talla",
+      "menu-item#mobile-inner-Politica-Despacho"
+    ]
+  },
+  "menu-item#mobile-inner-Cambio-Devoluciones": {
+    "props": {
+      "id": "menu-footer-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Cambio-Devoluciones",
+      "text": "Cambio y Devoluciones"
+      },
+      "blockClass": "menu-footer"
+    }
+  },
+  "menu-item#mobile-inner-Guia-Talla": {
+    "props": {
+      "id": "menu-footer-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Guia-Talla",
+      "text": "Guia de Talla"
+      },
+      "blockClass": "menu-footer"
+    }
+  },
+  "menu-item#mobile-inner-Politica-Despacho": {
+    "props": {
+      "id": "menu-footer-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Politica-Despacho",
+      "text": "Politica de Despacho"
+      },
+      "blockClass": "menu-footer"
+    }
+  }
+
+  
+
+
+
 }

@@ -2,44 +2,115 @@
   "store.home": { 
     "blocks": [
 
-      "slider-layout#home",
+      // "slider-layout#home",
+      "list-context.image-list#demo",
+
       "flex-layout.row#top-banners",
       "flex-layout.row#middle-banner",
       "flex-layout.row#bottom-banner",
       "flex-layout.row#carousel"
     ]
   },
-  //*****Slider***
-  "slider-layout#home":{
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
     "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/images/banner1.png",
+          "mobileImage": "assets/images/banner-mobile1.jpg",
+          "description": "Rediscover Freedom",
+          "link": "/vino"
+        },
+        {
+          "image": "assets/images/banner2.png",
+          "mobileImage": "assets/images/banner-mobile2.png",
+          "link": "/vino"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "fullWidth": true,
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
       },
       "infinite": true,
-      "autoplay":{
-        "timeout":2000,
-        "stopOnHover":true,
-        "blockClass":"home-carousel"
-      },
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel-home"
-    },
-    "children": ["image#carousel1", "image#carousel2"]
-  },
-  "image#carousel1": {
-    "props":{
-      "src": "assets/images/banner1.png",
-      "maxHeight": 500
+      "showNavigationArrows": "always",
+      "blockClass": "carousel-home",
+      "showPaginationDots": "never",
+      "arrowSize": 35,
+      "slideTransition": {
+        "delay": 5000
+      }
     }
   },
-  "image#carousel2": {
-    "props":{
-      "src": "assets/images/banner2.png",
-      "maxHeight": 500
-    }
-  },
+
+  // "slider-layout#home":{
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "autoplay":{
+  //       "timeout":2000,
+  //       "stopOnHover":true,
+  //       "blockClass":"home-carousel"
+  //     },
+  //     "showNavigationArrows": "desktopOnly",
+  //     "blockClass": "carousel-home"
+  //   },
+  //   "children": ["image#carousel1", "image#carousel2"]
+  // },
+  // "image#carousel1": {
+  //   "props":{
+  //     "src": "assets/images/banner1.png",
+  //     "maxHeight": 500
+  //   }
+  // },
+  // "image#carousel2": {
+  //   "props":{
+  //     "src": "assets/images/banner2.png",
+  //     "maxHeight": 500
+  //   }
+  // },
+  //*****Slider***
+  // "slider-layout#home":{
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "autoplay":{
+  //       "timeout":2000,
+  //       "stopOnHover":true,
+  //       "blockClass":"home-carousel"
+  //     },
+  //     "showNavigationArrows": "desktopOnly",
+  //     "blockClass": "carousel-home"
+  //   },
+  //   "children": ["image#carousel1", "image#carousel2"]
+  // },
+  // "image#carousel1": {
+  //   "props":{
+  //     "src": "assets/images/banner1.png",
+  //     "maxHeight": 500
+  //   }
+  // },
+  // "image#carousel2": {
+  //   "props":{
+  //     "src": "assets/images/banner2.png",
+  //     "maxHeight": 500
+  //   }
+  // },
 
   //Banner section top
   "flex-layout.row#top-banners":{
